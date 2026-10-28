@@ -1,0 +1,1708 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/anellautari/ontologies/2026/9/untitled-ontology-2/"
+     xml:base="http://www.semanticweb.org/anellautari/ontologies/2026/9/untitled-ontology-2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:tekken8-tournament-ontology="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#beradaDalamKondisi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#beradaDalamKondisi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Karakter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KondisiKarakter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#beradaPadaBracket -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#beradaPadaBracket">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Bracket"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#beradaPadaFase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#beradaPadaFase">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Match"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#FaseTurnamen"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#berlangsungDalamTurnamen -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#berlangsungDalamTurnamen">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Match"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Turnamen"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#dilakukanOleh -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#dilakukanOleh">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Serangan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Karakter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#kalahPadaMatch -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#kalahPadaMatch">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Match"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#kalahPadaSet -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#kalahPadaSet">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#memilikiPemainKalah"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Set"/>
+        <rdfs:comment>R12, R13: Merepresentasikan hubungan pemain dengan Set yang dikalahkannya. Relasi ini digunakan untuk memodelkan syarat pergantian karakter dan kelayakan coaching setelah Set sebelumnya.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#memakaiProperti -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#memakaiProperti">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#RangkaianKombo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PropertiKombo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#memenangkanRonde -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#memenangkanRonde">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Ronde"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#memilikiPemainKalah -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#memilikiPemainKalah">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Set"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain"/>
+        <rdfs:comment>R12, R13: Relasi invers dari kalahPadaSet yang menunjukkan pemain yang kalah pada suatu Set.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#memilikiSenjataBawaan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#memilikiSenjataBawaan">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Karakter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Senjata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#memilikiStage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#memilikiStage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Ronde"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Stage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#mengakibatkanHasil -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#mengakibatkanHasil">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#RangkaianKombo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#HasilPertarungan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#mengaktifkanKondisi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#mengaktifkanKondisi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Serangan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KondisiKarakter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#menggunakanKarakter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#menggunakanKarakter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Karakter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#menggunakanSenjataKarakter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#menggunakanSenjataKarakter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Senjata"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#menggunakanKarakter"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#memilikiSenjataBawaan"/>
+        </owl:propertyChainAxiom>
+        <rdfs:comment>R18: Menyimpulkan hubungan pemain dengan senjata melalui karakter yang digunakannya dan senjata bawaan karakter tersebut.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#menghasilkanDamage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#menghasilkanDamage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Serangan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#HasilPertarungan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#terdiriDariRonde -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#terdiriDariRonde">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Set"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Ronde"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#terdiriDariSet -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#terdiriDariSet">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Match"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Set"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#batasWaktuRondeDetik -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#batasWaktuRondeDetik">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Ronde"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#damageAkhir -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#damageAkhir">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#AktivitasRageArt"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#damageAwal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#damageAwal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#AktivitasRageArt"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#durasiCoachingDetik -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#durasiCoachingDetik">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#SesiCoaching"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#jumlahRondeUntukMenang -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#jumlahRondeUntukMenang">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Set"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#jumlahSetUntukMenang -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#jumlahSetUntukMenang">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Match"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#persentaseHealth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#persentaseHealth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Karakter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#persentasePenaltiPemulihan -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#persentasePenaltiPemulihan">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#usiaRilisHari -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#usiaRilisHari">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KarakterDLC"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#AktivitasHeatBurst -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#AktivitasHeatBurst">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Serangan"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#mengaktifkanKondisi"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#HeatState"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#menghasilkanDamage"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#RecoverableDamage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#menghasilkanDamage"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#RecoverableDamage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#AktivitasHeatEngager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#AktivitasHeatEngager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Serangan"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#mengaktifkanKondisi"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#HeatState"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#AktivitasRageArt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#AktivitasRageArt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Serangan"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#mengaktifkanKondisi"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#RageState"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#ArcadeStyle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#ArcadeStyle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#SkemaKontrol"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#SpecialStyle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#BackTurned -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#BackTurned">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KondisiKarakter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Bracket -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Bracket">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#StrukturPertandingan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Crouching -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Crouching">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KondisiKarakter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#EntitasPermainan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#EntitasPermainan"/>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#EntitasTurnamen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#EntitasTurnamen"/>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#FaseSebelumTop8 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#FaseSebelumTop8">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#FaseTurnamen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#FaseTop8 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#FaseTop8">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#FaseTurnamen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#FaseTurnamen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#FaseTurnamen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#StrukturPertandingan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#HasilPertarungan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#HasilPertarungan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#EntitasPermainan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#HeatState -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#HeatState">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KondisiKarakter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Karakter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Karakter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#EntitasPermainan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KarakterDLC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KarakterDLC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Karakter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KarakterDalamRage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KarakterDalamRage">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Karakter"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#persentaseHealth"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Karakter"/>
+        <rdfs:comment>R6: Mengelompokkan karakter yang memiliki persentase Health di bawah 25%.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KarakterIlegalLokal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KarakterIlegalLokal">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KarakterDLC"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#usiaRilisHari"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Karakter"/>
+        <rdfs:comment>R15: Mengelompokkan karakter DLC yang usia rilisnya kurang dari 30 hari pada tanggal kompetisi lokal.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KomboFoul -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KomboFoul">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#RangkaianKombo"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#memakaiProperti"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Tornado"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#memakaiProperti"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#WallBlast"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#mengakibatkanHasil"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PerfectKO"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#RangkaianKombo"/>
+        <rdfs:comment>R19: Mengelompokkan rangkaian kombo yang menggunakan properti Tornado dan Wall Blast serta menghasilkan PerfectKO.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KondisiKarakter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KondisiKarakter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#EntitasPermainan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#LosersBracket -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#LosersBracket">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Bracket"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#WinnersBracket"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Match -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Match">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#StrukturPertandingan"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#terdiriDariSet"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Set"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#MatchBestOfFive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#MatchBestOfFive">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#MatchMasterSeries"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#beradaPadaFase"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#FaseTop8"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#jumlahSetUntukMenang"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#MatchMasterSeries"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#terdiriDariSet"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Set"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#terdiriDariSet"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Set"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>R10: Merepresentasikan Match Master Series pada fase Top 8 dengan format best-of-five.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#MatchBestOfThree -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#MatchBestOfThree">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#MatchMasterSeries"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#beradaPadaFase"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#FaseSebelumTop8"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#jumlahSetUntukMenang"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#MatchMasterSeries"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#terdiriDariSet"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Set"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#terdiriDariSet"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Set"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>R10: Merepresentasikan Match Master Series sebelum fase Top 8 dengan format best-of-three.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#MatchDisruption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#MatchDisruption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#EntitasTurnamen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#MatchMasterSeries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#MatchMasterSeries">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#MatchMasterSeries"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#beradaPadaFase"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#FaseTop8"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#jumlahSetUntukMenang"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Match"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#MirrorMatch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#MirrorMatch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Match"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pelatih -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pelatih">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#EntitasTurnamen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#EntitasTurnamen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PemainBerhakGantiKarakter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PemainBerhakGantiKarakter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PemainLosersBracket -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PemainLosersBracket">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PemainPenaltiSenjata -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PemainPenaltiSenjata">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#persentasePenaltiPemulihan"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>R18: Merepresentasikan pemain yang memenuhi kondisi penalti terkait penggunaan senjata tajam bawaan karakter.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PemainTereliminasi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PemainTereliminasi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PemainLosersBracket"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PemainTerkunciKarakter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PemainTerkunciKarakter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PemenangSet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PemenangSet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PesertaSet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PerfectKO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PerfectKO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#HasilPertarungan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PesertaSet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PesertaSet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PropertiKombo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PropertiKombo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#EntitasPermainan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#RageState -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#RageState">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KondisiKarakter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#RangkaianKombo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#RangkaianKombo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#EntitasPermainan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#RecoverableDamage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#RecoverableDamage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#HasilPertarungan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Ronde -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Ronde">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#StrukturPertandingan"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#memilikiStage"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Stage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Senjata -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Senjata">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#EntitasPermainan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#SenjataTajam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#SenjataTajam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Senjata"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Serangan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Serangan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#EntitasPermainan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#SesiCoaching -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#SesiCoaching">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#EntitasTurnamen"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#durasiCoachingDetik"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Set -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Set">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#StrukturPertandingan"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#terdiriDariRonde"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Ronde"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#terdiriDariRonde"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Ronde"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#jumlahRondeUntukMenang"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#SkemaKontrol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#SkemaKontrol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#EntitasPermainan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#SpecialStyle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#SpecialStyle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#SkemaKontrol"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Stage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Stage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#EntitasPermainan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#StrukturPertandingan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#StrukturPertandingan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#EntitasTurnamen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Tornado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Tornado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PropertiKombo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Turnamen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Turnamen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#EntitasTurnamen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#TurnamenLokal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#TurnamenLokal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Turnamen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#TurnamenMaster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#TurnamenMaster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#TurnamenTWT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#TurnamenMasterPlus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#TurnamenMasterPlus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#TurnamenTWT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#TurnamenTWT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#TurnamenTWT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Turnamen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#WallBlast -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#WallBlast">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PropertiKombo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#WinnersBracket -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#WinnersBracket">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Bracket"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Andi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Andi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PesertaSet"/>
+        <tekken8-tournament-ontology:memenangkanRonde rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R1_S1_CQ3"/>
+        <tekken8-tournament-ontology:memenangkanRonde rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R2_S1_CQ3"/>
+        <tekken8-tournament-ontology:memenangkanRonde rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R3_S1_CQ3"/>
+        <tekken8-tournament-ontology:menggunakanKarakter rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Jin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Arslan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Arslan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain"/>
+        <tekken8-tournament-ontology:kalahPadaMatch rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Match_CQ1"/>
+        <tekken8-tournament-ontology:menggunakanKarakter rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Victor"/>
+        <tekken8-tournament-ontology:persentasePenaltiPemulihan rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.0</tekken8-tournament-ontology:persentasePenaltiPemulihan>
+        <rdfs:comment>[CQ1] 
+Instance pemain turnamen lokal yang menggunakan karakter Victor.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Budi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Budi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PesertaSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Citra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Citra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PemainLosersBracket"/>
+        <tekken8-tournament-ontology:beradaPadaBracket rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#LosersBracket"/>
+        <tekken8-tournament-ontology:kalahPadaMatch rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Match_Losers_CQ6"/>
+        <tekken8-tournament-ontology:kalahPadaSet rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#S1_CQ6"/>
+        <tekken8-tournament-ontology:kalahPadaSet rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#S2_CQ6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Clive -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Clive">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KarakterDLC"/>
+        <tekken8-tournament-ontology:usiaRilisHari rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</tekken8-tournament-ontology:usiaRilisHari>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Coaching_Budi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Coaching_Budi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#SesiCoaching"/>
+        <tekken8-tournament-ontology:durasiCoachingDetik rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</tekken8-tournament-ontology:durasiCoachingDetik>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Dedi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Dedi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PesertaSet"/>
+        <tekken8-tournament-ontology:memenangkanRonde rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R1_S1_CQ6"/>
+        <tekken8-tournament-ontology:memenangkanRonde rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R1_S2_CQ6"/>
+        <tekken8-tournament-ontology:memenangkanRonde rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R2_S1_CQ6"/>
+        <tekken8-tournament-ontology:memenangkanRonde rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R2_S2_CQ6"/>
+        <tekken8-tournament-ontology:memenangkanRonde rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R3_S1_CQ6"/>
+        <tekken8-tournament-ontology:memenangkanRonde rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R3_S2_CQ6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Diskoneksi_Law -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Diskoneksi_Law">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#MatchDisruption"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#DmgRecoverable_HB_CQ10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#DmgRecoverable_HB_CQ10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#RecoverableDamage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Dragunov -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Dragunov">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Karakter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Fase_Awal_CQ6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Fase_Awal_CQ6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#FaseSebelumTop8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Fase_WinnersSemifinal_CQ3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Fase_WinnersSemifinal_CQ3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#FaseTop8"/>
+        <rdfs:comment>[CQ3] 
+Instance fase turnamen babak Winner&apos;s Semifinal yang termasuk ke dalam fase top 8 (R10).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Hasil_PerfectKO_Reina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Hasil_PerfectKO_Reina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PerfectKO"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Jin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Jin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Karakter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KarakterLawan_Kazuya_CQ10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KarakterLawan_Kazuya_CQ10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Karakter"/>
+        <tekken8-tournament-ontology:beradaDalamKondisi rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KondisiCrouch_Lawan_CQ10"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Karakter_Reina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Karakter_Reina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Karakter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Kazuya_CQ10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Kazuya_CQ10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Karakter"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Kazuya_CQ4"/>
+        <tekken8-tournament-ontology:beradaDalamKondisi rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KondisiRage_Kazuya_CQ10"/>
+        <tekken8-tournament-ontology:persentaseHealth rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20.0</tekken8-tournament-ontology:persentaseHealth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Kazuya_CQ4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Kazuya_CQ4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Karakter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#King -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#King">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Karakter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Kombo_Reina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Kombo_Reina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#RangkaianKombo"/>
+        <tekken8-tournament-ontology:memakaiProperti rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Prop_Tornado_CQ5"/>
+        <tekken8-tournament-ontology:memakaiProperti rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Prop_WallBlast_CQ5"/>
+        <tekken8-tournament-ontology:mengakibatkanHasil rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Hasil_PerfectKO_Reina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KondisiBT_Xiaoyu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KondisiBT_Xiaoyu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#BackTurned"/>
+        <rdfs:comment>[CQ2] 
+Instance kondisi Back Turned yang sedang dialami karakter Xiaoyu pada ronde yang sedang berjalan (R5)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KondisiCrouch_Lawan_CQ10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KondisiCrouch_Lawan_CQ10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Crouching"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KondisiHeat_Victor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KondisiHeat_Victor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#HeatState"/>
+        <rdfs:comment>[CQ1] 
+Kondisi Heat aktif yang dialami karakter Victor setelah mendaratkan serangan Heat Engager (R1, R2, R3).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KondisiRage_Kazuya_CQ10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KondisiRage_Kazuya_CQ10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#RageState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KontrolSpecial_Andi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KontrolSpecial_Andi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#SpecialStyle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Law -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Law">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Karakter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#LosersBracket -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#LosersBracket">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#LosersBracket"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Match_CQ1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Match_CQ1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Match"/>
+        <tekken8-tournament-ontology:berlangsungDalamTurnamen rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#TurnamenLokal_CQ1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Match_Losers_CQ6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Match_Losers_CQ6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#MatchMasterSeries"/>
+        <tekken8-tournament-ontology:beradaPadaFase rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Fase_Awal_CQ6"/>
+        <tekken8-tournament-ontology:terdiriDariSet rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#S1_CQ6"/>
+        <tekken8-tournament-ontology:terdiriDariSet rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#S2_CQ6"/>
+        <tekken8-tournament-ontology:jumlahSetUntukMenang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</tekken8-tournament-ontology:jumlahSetUntukMenang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Match_Mirror_CQ8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Match_Mirror_CQ8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#MirrorMatch"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Match_Normal_CQ9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Match_Normal_CQ9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Match"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Match_Semifinal_CQ3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Match_Semifinal_CQ3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#MatchMasterSeries"/>
+        <tekken8-tournament-ontology:beradaPadaFase rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Fase_WinnersSemifinal_CQ3"/>
+        <tekken8-tournament-ontology:berlangsungDalamTurnamen rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#TurnamenMaster_Lokal_CQ3"/>
+        <tekken8-tournament-ontology:terdiriDariSet rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#S1_CQ3"/>
+        <tekken8-tournament-ontology:jumlahSetUntukMenang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</tekken8-tournament-ontology:jumlahSetUntukMenang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PedangVictor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PedangVictor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#SenjataTajam"/>
+        <rdfs:comment>[CQ1] 
+Instance senjata tajam bawaan milik karakter Victor yang dapat trigger penalti pemulihan Recoverable Health (R18)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain1_CQ8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain1_CQ8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain"/>
+        <tekken8-tournament-ontology:menggunakanKarakter rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Dragunov"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain2_CQ8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain2_CQ8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain"/>
+        <tekken8-tournament-ontology:menggunakanKarakter rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Dragunov"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain_Jin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain_Jin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain"/>
+        <tekken8-tournament-ontology:menggunakanKarakter rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Jin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain_Kazuya_CQ10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain_Kazuya_CQ10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain"/>
+        <tekken8-tournament-ontology:menggunakanKarakter rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Kazuya_CQ10"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain_King -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain_King">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain"/>
+        <tekken8-tournament-ontology:menggunakanKarakter rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#King"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain_Law -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain_Law">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain"/>
+        <tekken8-tournament-ontology:menggunakanKarakter rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Law"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Prop_Tornado_CQ5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Prop_Tornado_CQ5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Tornado"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Prop_WallBlast_CQ5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Prop_WallBlast_CQ5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#WallBlast"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R1_CQ8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R1_CQ8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Ronde"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R1_CQ9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R1_CQ9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Ronde"/>
+        <tekken8-tournament-ontology:memilikiStage rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Stage_OrtizFarm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R1_S1_CQ3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R1_S1_CQ3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Ronde"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R1_S1_CQ6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R1_S1_CQ6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Ronde"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R1_S2_CQ6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R1_S2_CQ6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Ronde"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R2_S1_CQ3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R2_S1_CQ3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Ronde"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R2_S1_CQ6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R2_S1_CQ6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Ronde"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R2_S2_CQ6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R2_S2_CQ6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Ronde"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R3_S1_CQ3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R3_S1_CQ3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Ronde"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R3_S1_CQ6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R3_S1_CQ6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Ronde"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R3_S2_CQ6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R3_S2_CQ6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Ronde"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Reina_CQ5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Reina_CQ5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain"/>
+        <tekken8-tournament-ontology:menggunakanKarakter rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Karakter_Reina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#S1_CQ3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#S1_CQ3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Set"/>
+        <tekken8-tournament-ontology:memilikiPemainKalah rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Budi"/>
+        <tekken8-tournament-ontology:terdiriDariRonde rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R1_S1_CQ3"/>
+        <tekken8-tournament-ontology:terdiriDariRonde rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R2_S1_CQ3"/>
+        <tekken8-tournament-ontology:terdiriDariRonde rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R3_S1_CQ3"/>
+        <tekken8-tournament-ontology:jumlahRondeUntukMenang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</tekken8-tournament-ontology:jumlahRondeUntukMenang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#S1_CQ6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#S1_CQ6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Set"/>
+        <tekken8-tournament-ontology:jumlahRondeUntukMenang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</tekken8-tournament-ontology:jumlahRondeUntukMenang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#S2_CQ6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#S2_CQ6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Set"/>
+        <tekken8-tournament-ontology:jumlahRondeUntukMenang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</tekken8-tournament-ontology:jumlahRondeUntukMenang>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#SeranganHB_Lawan_CQ10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#SeranganHB_Lawan_CQ10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#AktivitasHeatBurst"/>
+        <tekken8-tournament-ontology:menghasilkanDamage rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#DmgRecoverable_HB_CQ10"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#SeranganHE_Arslan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#SeranganHE_Arslan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#AktivitasHeatEngager"/>
+        <tekken8-tournament-ontology:beradaDalamKondisi rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KondisiHeat_Victor"/>
+        <tekken8-tournament-ontology:dilakukanOleh rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Victor"/>
+        <tekken8-tournament-ontology:mengaktifkanKondisi rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KondisiHeat_Victor"/>
+        <rdfs:comment>[CQ1] 
+Instance aksi serangan Heat Engager yang dilakukan oleh karakter Victor untuk mengaktifkan HeatState (R2).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#SeranganPenutup_Law -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#SeranganPenutup_Law">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Serangan"/>
+        <tekken8-tournament-ontology:dilakukanOleh rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Law"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#SeranganRA_Kazuya_CQ10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#SeranganRA_Kazuya_CQ10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#AktivitasRageArt"/>
+        <tekken8-tournament-ontology:dilakukanOleh rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Kazuya_CQ10"/>
+        <tekken8-tournament-ontology:mengaktifkanKondisi rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KondisiRage_Kazuya_CQ10"/>
+        <tekken8-tournament-ontology:damageAwal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">55.0</tekken8-tournament-ontology:damageAwal>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Stage_OrtizFarm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Stage_OrtizFarm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Stage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Stage_Yakushima -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Stage_Yakushima">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Stage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#TurnamenLokal_CQ1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#TurnamenLokal_CQ1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#TurnamenLokal"/>
+        <rdfs:comment>[CQ1, CQ8, CQ9] 
+Instance turnamen lokal yang menerapkan aturan house rules di luar standar TWT.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#TurnamenMaster_Lokal_CQ3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#TurnamenMaster_Lokal_CQ3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#TurnamenMaster"/>
+        <rdfs:comment>[CQ3, CQ6] 
+Instance turnamen Master Event (R10).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Victor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Victor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Karakter"/>
+        <tekken8-tournament-ontology:memilikiSenjataBawaan rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PedangVictor"/>
+        <rdfs:comment>[CQ1] 
+Instance karakter Tekken 8 yang digunakan oleh pemain Arslan dan memiliki senjata tajam bawaan (R18)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Xiaoyu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Xiaoyu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Karakter"/>
+        <tekken8-tournament-ontology:beradaDalamKondisi rdf:resource="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KondisiBT_Xiaoyu"/>
+        <rdfs:comment>[CQ2] 
+Instance karakter Tekken 8 yang sedang berada dalam kondisi Back Turned sehingga tidak dapat mengaktifkan Heat Burst (R1, R2, R5)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Andi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Arslan"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Budi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Citra"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Clive"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Coaching_Budi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Dedi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Diskoneksi_Law"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#DmgRecoverable_HB_CQ10"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Dragunov"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Fase_Awal_CQ6"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Fase_WinnersSemifinal_CQ3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Hasil_PerfectKO_Reina"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Jin"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KarakterLawan_Kazuya_CQ10"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Karakter_Reina"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Kazuya_CQ10"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Kazuya_CQ4"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#King"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Kombo_Reina"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KondisiBT_Xiaoyu"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KondisiCrouch_Lawan_CQ10"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KondisiHeat_Victor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KondisiRage_Kazuya_CQ10"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#KontrolSpecial_Andi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Law"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#LosersBracket"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Match_CQ1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Match_Losers_CQ6"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Match_Mirror_CQ8"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Match_Normal_CQ9"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Match_Semifinal_CQ3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#PedangVictor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain1_CQ8"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain2_CQ8"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain_Jin"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain_Kazuya_CQ10"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain_King"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Pemain_Law"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Prop_Tornado_CQ5"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Prop_WallBlast_CQ5"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R1_CQ8"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R1_CQ9"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R1_S1_CQ3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R1_S1_CQ6"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R1_S2_CQ6"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R2_S1_CQ3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R2_S1_CQ6"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R2_S2_CQ6"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R3_S1_CQ3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R3_S1_CQ6"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#R3_S2_CQ6"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Reina_CQ5"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#S1_CQ3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#S1_CQ6"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#S2_CQ6"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#SeranganHB_Lawan_CQ10"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#SeranganHE_Arslan"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#SeranganPenutup_Law"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#SeranganRA_Kazuya_CQ10"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Stage_OrtizFarm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Stage_Yakushima"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#TurnamenLokal_CQ1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#TurnamenMaster_Lokal_CQ3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Victor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/K06-tekken8/ontologies/2026/10/tekken8-tournament-ontology#Xiaoyu"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
